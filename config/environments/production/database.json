@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "cluster0-shard-00-00-diqzh.mongodb.net:27017,cluster0-shard-00-01-diqzh.mongodb.net:27017,cluster0-shard-00-02-diqzh.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority",
+        "port": 27017,
+        "database": "ownerz",
+        "username": "master",
+        "password": "command1234"
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}

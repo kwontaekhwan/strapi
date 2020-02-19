@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "board",
+  "info": {
+    "name": "board",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "board"
+    }
+  }
+}

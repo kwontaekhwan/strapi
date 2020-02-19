@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "post",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "board": {
+      "model": "board",
+      "via": "posts"
+    },
+    "user": {
+      "model": "user",
+      "via": "posts",
+      "plugin": "users-permissions"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "post"
+    }
+  }
+}
